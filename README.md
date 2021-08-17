@@ -1,7 +1,7 @@
 # overall-score
 Scripts for generating overall score report for students, usually near the end of the semester.
 
-## `autograder/`
+### `autograder/`
 
 Everything in this directory should be zipped into an `autograder.zip` for Gradescope configuration.
 
@@ -9,6 +9,6 @@ Everything in this directory should be zipped into an `autograder.zip` for Grade
 
 This directory also requires a `grades.csv` file (not included), which must contain an `SID` column, in addition to columns for each grade category and assignment.
 
-## `api_client_2.py`
+### `api_client_2.py`
 
 This file generates the dummy submission for each student that Gradescope then "grades" according to `output_final_grades.py` above. `COURSE_ID` and `ASSIGNMENT_ID` should be updated each semester.
