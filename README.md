@@ -23,7 +23,9 @@ This file generates the dummy submission for each student that Gradescope then "
 1. Upload the autograder zip. Note that the zip should contain only the files and not the top-level `autograder` directory, as below:
 
     ```
-    zip autograder.zip autograder/*
+    cd autograder
+    zip ../autograder.zip *
+    cd ..
     ```
 
 1. Generate the dummy submissions on your local machine by running:
@@ -34,9 +36,9 @@ This file generates the dummy submission for each student that Gradescope then "
 
     If the autograder exists for this submission, running this script will trigger the autograder to run on each new submission.
 
-1. To debug the autograder:
+1. To debug/update just the autograder, you just need to do Step 1 above. In other words if you know all students have the right SID in your `grades.csv`, don't run `api_client_2.py`.
 
-    1. Re-upload just the autograder, i.e., perform Step 1 above. Don't do Step 2.
+    1. Re-upload just the autograder to the "Configure Autograder" page.
 
     1. On the "Configure Autograder" page, wait for the Docker image to build, then click "Test Autograder" and upload a student submission to your own account. 
 
