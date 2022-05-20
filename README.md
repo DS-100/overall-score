@@ -45,3 +45,7 @@ This file generates the dummy submission for each student that Gradescope then "
     1. Use SSH, etc., to debug.
 
     1. When you verify it works on your own submission, then go to "Manage Submissions" -> "Regrade All Submissions."
+
+### `.gitignore`
+
+To protect student privacy, all `grades.csv`, `SID.json`, and `.zip` files are ignored.
